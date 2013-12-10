@@ -16,7 +16,7 @@ use Zend\Stdlib\RequestInterface as Request;
  */
  
  /*
- * Инртерфецс для все роутеров
+ * Инртерфецс для всех роутеров
  */
  
 interface RouteInterface
