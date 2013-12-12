@@ -15,6 +15,7 @@ use Zend\Stdlib\CallbackHandler;
 /**
  * Interface for messengers
  */
+ 
 interface EventManagerInterface extends SharedEventManagerAwareInterface
 {
     /**

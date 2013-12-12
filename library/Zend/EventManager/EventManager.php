@@ -32,6 +32,9 @@ class EventManager implements EventManagerInterface
     /**
      * @var string Class representing the event being emitted
      */
+     /*
+     * Событие как отдельный Объект 
+     */
     protected $eventClass = 'Zend\EventManager\Event';
 
     /**

@@ -13,6 +13,10 @@ namespace Zend\EventManager;
 /**
  * Static version of EventManager
  */
+
+ /*
+ * Просто Singleton надстройка
+ */
 class StaticEventManager extends SharedEventManager
 {
     /**
