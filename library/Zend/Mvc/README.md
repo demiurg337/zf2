@@ -13,3 +13,9 @@ LICENSE
 The files in this archive are released under the [Zend Framework
 license](http://framework.zend.com/license), which is a 3-clause BSD license.
 
+-------------------------------------------------------------------------------------
+________________________________________
+| Все модули и части взаимно заминяемы
+_______________________________________
+
+- Можна розшырювати MVC/Application 

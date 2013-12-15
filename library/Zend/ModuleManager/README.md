@@ -80,3 +80,42 @@ Stuff that still needs work:
 * Should we, and if so, how would we handle DB schemas for installation, update/migrations, and uninstallation of modules?
 * When a module is uninstalled, what's removed, what should stay? Do we put the responsibility of uninstallation in the hands of each module developer?
 * When a module is uninstalled, should it check for other modules that are still depending on it? How much is too much, and when do we just leave it up to the developers?
+=============================================================================
+Коментарии:
+Тут вроде используется патерн мост
+
+- Модуль может иметь любую структуру
+Рекомендованая структура:
+module_root/
+    Module.php
+    autoload_classmap.php
+    autoload_function.php
+    autoload_register.php
+    config/
+        module.config.php
+    public/
+        images/
+        css/
+        js/
+    src/
+        <module_namespace>/
+            <code files>
+    test/
+        phpunit.xml
+        bootstrap.php
+        <module_namespace>/
+            <test code files>
+    view/
+        <dir-named-after-module-namespace>/
+            <dir-named-after-a-controller>/
+                <.phtml files> 
+
+
+    Где 
+     autoload_classmap.php - содержыт в себе массив c картой классов
+     autoload_function.php - Возвращает (return) функцию которую нужно передать в spl_autoload_register
+     autoload_register.php - регеструрует php функцию которую использовать для подгрузки класов (например spl_autoload_register)
+
+- События 
+
+Звязаний з Autoloader

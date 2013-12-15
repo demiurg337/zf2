@@ -13,3 +13,7 @@ LICENSE
 The files in this archive are released under the [Zend Framework
 license](http://framework.zend.com/license), which is a 3-clause BSD license.
 
+==================================================
+
+- использует паттерн Service Locator
+
